@@ -1,7 +1,8 @@
-<h1>Ingredients Info</h1>
+<%= render partial: "shared/header" %>
+
 <div class="main actor-show">
   <div class="container">
-    
+    <h1>Ingredients Info</h1>    
     <!-- Display an ingredient's info here -->
     <div class="actor">
       <%= image_tag @ingredient.image %>
@@ -23,3 +24,4 @@
 
   </div>
 </div>
+<%= render partial: "shared/footer" %>

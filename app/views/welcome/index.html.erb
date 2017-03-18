@@ -1,15 +1,85 @@
 
 <div class="welcome_container">
-<div style="display: block; min-height: 150px; width: 100%;"></div>
-  <div class="welcome-shot">
-    <p style="color: grey; font-size: 40px; margin-left: 60%; padding-top: 200px">Wecome to ShotMaker!</p>
-    <p style="color: blue; font-size: 12px; margin-left: 72%">(You must be 21 to enter...or just somebody cool.)</p>
+<div class="ad_space"></div>
+  <div class="welcome_shot">
+    <div class="welcome_message">
+      <p class="wtext_1">Wecome to ShotMaker!</p>
+      <p class="wtext_2">(You must be 21 to enter...or just somebody cool.)</p>
+      <!-- signup button trigger modal -->
+      <button type="button" style="margin: 7px;" class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#signupModal">Signup</button>
+      <!-- login button trigger modal -->
+      <button type="button" style="margin:7px;" class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myModal">Login</button>
    
-       <%= link_to 'Enter', shots_path, :class=>"btn btn-primary btn-lg pull-right" %>
-   
+    </div>
   </div>
-  <div style="display: block; min-height: 100px; width: 100%;"></div>
+  <div class="ad_space">
+  	<%= render partial: "shared/welcomefooter" %>
+
+
+  </div>
 </div>
 
+
+<!-- login modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Please login...</h4>
+      </div>
+      <div class="modal-body">
+        <br>
+        <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
+          <input name="utf8" type="hidden" value="&#x2713;" />
+          <input name="authenticity_token" type="hidden" value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
+          <label for="user_name">Name</label>
+          <input id="user_name" name="user[name]" type="text" />
+          <br><br>
+          <label for="user_password">Password</label>
+          <input id="user_password" name="user[password]" type="password" />
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       <!-- <input class="btn btn-primary" name="commit" type="submit" value="Login" /> -->
+        <%= link_to 'Login', shots_path, :class=>"btn btn-primary btn-lgt" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- signup modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="signupModalLabel">Sign-up for and account...</h4>
+      </div>
+      <div class="modal-body">
+        <br>
+        <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
+          <label for="user_name">Name</label>
+          <input id="user_name" name="user[name]" type="text" />
+          <br>
+          <label for="user_email">Email</label>
+          <input id="user_email" name="user[email]" type="email" />
+          <br>
+          <label for="user_password">Password</label>
+          <input id="user_password" name="user[password]" type="password" />
+          <br>
+          <label for="user_password_confirmation">Confirmation</label>
+          <input id="user_password_confirmation" name="user[password_confirmation]" type="password" />
+          <br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
