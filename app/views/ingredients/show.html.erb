@@ -1,0 +1,25 @@
+<h1>Ingredients Info</h1>
+<div class="main actor-show">
+  <div class="container">
+    
+    <!-- Display an ingredient's info here -->
+    <div class="actor">
+      <%= image_tag @ingredient.image %>
+      <div class="info">
+        <h3 class="actor-name"><%= @ingredient.ingredientname  %></h3>
+        <p class="actor-bio"><%= @ingredient.description %></p>
+      </div>
+    </div>
+
+    <h1>Shots</h1>
+    <% @shots.each do |shot| %>
+    <div class="movie">
+      <%= image_tag shot.image %>
+      <h3 class="movie-title"><%= shot.name %></h3>
+      <p class="movie-release-year"><%= shot.color %></p>
+      <p class="movie-plot"><%= shot.description %></p>
+    </div>
+    <% end %>
+
+  </div>
+</div>

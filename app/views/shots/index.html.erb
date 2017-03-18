@@ -1,2 +1,21 @@
-<h1>Display of Shots</h1>
+<div class="container">
 
+<div class="main">
+  <div class="container">
+  <h1>Popular Shots</h1>
+  <div style="min-height: 50px;">
+    <%= link_to 'Ingredients', "/ingredients" %>
+  </div>
+  <br>
+    <% @shots.each do |shot| %>
+    <div class="movie">
+      <%= image_tag shot.image %>
+      <h3><%= shot.name %></h3>
+      <p><%= shot.description %></p>
+      <%= link_to "Learn more", shot_path(shot) %>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+</div>

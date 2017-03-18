@@ -1,2 +1,19 @@
-<h1>Display of Ingredients</h1>
+<div class="container">
+  <h1>Display of Ingredients</h1>
+  <%= link_to 'Shots', "/shots" %>  
 
+
+  <div class="main actor-index">
+      <div class="container">
+        <div class="row">
+          <% @ingredients.each do |ingredient| %>
+          <div class="actor col-xs-2">
+            <%= image_tag ingredient.image %>
+            <h3><%= ingredient.ingredientname %></h3>
+            <%= link_to "Learn more", ingredient_path(ingredient) %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+  
+</div>
