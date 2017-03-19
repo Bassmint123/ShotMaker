@@ -35,7 +35,7 @@ body, html {
 
 .ad_space {
   display: block;
-  min-height: 100px;
+  min-height: 95px;
   width: 100%;
 }
 
@@ -67,14 +67,9 @@ body, html {
   text-align: right;
 }
 
-.header img {
-  margin: 20px 0;
-}
-
 .container {
-  position: float;
   margin: 0 auto 0;
-  width: 1200px;
+  width: 1000px;
 }
 
 .welcome_container {
@@ -92,15 +87,8 @@ body, html {
 }
 
 /*
-  MOVIES
+  Shots
 */
-
-.hero {
-  background: url('http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/interstellar-hero.jpg');
-  background-size: cover;
-  height: 500px;
-  width: 100%;
-}
 
 h2 {
   color: white;
@@ -108,65 +96,31 @@ h2 {
   text-align: center;
 }
 
-.main p {
-  color: #fff;
-  font-size: 14px;
-}
-
-.hero h2 {
-  color: #fff;
-  padding: 160px 0 0 0;
+.main h2 {
+  color: #0393ff;
+  padding: 40px 0 40px 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 40px;
+  font-size: 24px;
   text-shadow: 0px 2px 2px rgba(0,0,0,0.1);
   text-transform: uppercase;
 }
 
-.hero p {
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+.main p {
   color: #fff;
-  display: block;
-    display: -webkit-box;
-  max-height: 300px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 30%;
-}
-
-.hero a {
-  background-color: #0393ff;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  border-radius: 2px;
-  border-top: 1px solid rgba(255,255,255,0.25);
-  color: #fff;
-  display: block;
   font-size: 14px;
-  height: 30px;
-  line-height: 30px;
-  margin: 20px 0 0 0;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.5s;
-  width: 120px;
-}
-
-.hero a:hover {
-  background-color: #0073ad;
-  transition: background-color 0.5s;
 }
 
 h3,
 h3 a {
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  line-height: 18px;
-  margin: 12px 0 4px;
+  line-height: 22px;
+  margin: 12px 0 4px; 
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.movie, .actor {
+.shot, .ingredient {
   display: block;
   float: left;
   margin: 0 10px 80px 0;
@@ -174,26 +128,34 @@ h3 a {
   width: 184px;
 }
 
-.actor {
+.ingredient {
   height: 350px;
 }
 
-.movie {
-  height: 450px;
+.shot {
+  height: 525px;
 }
 
-.movie:nth-child(5n + 6), .actor:nth-child(5n + 6)  {
+.shot:nth-child(5n + 6), .ingredient:nth-child(5n + 6)  {
   margin: 0 0 80px 0;
 }
 
-.movie img, .actor img {
+.shot img, .ingredient img {
   width: 100%;
 }
 
-.movie a,
-.actor a {
+.shot a,
+.ingredient a {
   color: #0393ff;
   text-decoration: none;
+}
+
+
+.info {
+  display: block;
+  float: left;
+  margin: 0 0 0 40px;
+  width: calc(100% - 224px);
 }
 
 p.year {
@@ -201,19 +163,19 @@ p.year {
 }
 
 /* 
-  MOVIE SHOW
+  shot SHOW
 */
-.movie-show .movie, .actor-index, .actor-show .actor {
+.shot-show .shot, .ingredient-index, .ingredient-show .ingredient {
   padding: 160px 0 0 0;
   width: 100%;
 }
 
-.movie-show .movie img, .actor-show .actor img {
+.shot-show .shot img, .ingredient-show .ingredient img {
   float: left;
   width: 184px;
 }
 
-.movie-show .movie h3, .actor-show .actor h3 {
+.shot-show .shot h3, .ingredient-show .ingredient h3 {
   color: #0393ff;
   font-size: 40px;
   height: auto;
@@ -227,11 +189,11 @@ p.year {
   width: calc(100% - 224px);
 }
 
-.movie-show .movie p {
+.shot-show .shot p {
   display: block;
 }
 
-.movie-show .movie p.year {
+.shot-show .shot p.year {
   margin: 0 0 20px 0;
 }
 
@@ -245,37 +207,25 @@ p.year {
     width: calc(100% - 40px);
   }
 
-  .hero h2 {
-    padding: 250px 0 0 0;
-  }
-
-  .hero p {
-    width: 50%;
-  }
-
-  .movie, .actor {
-    width: calc(25% - 10px);
-  }
-
-  .movie h3 {
+  .shot h3 {
     font-size: 15px;
   }
 
-  .movie a,
-  .actor a {
+  .shot a,
+  .ingredient a {
     font-size: 12px;
   }
 }
 
 @media screen and (min-width: 700px) {
-  .movie a,
-  .actor a {
+  .shot a,
+  .ingredient a {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .movie, .actor {
+  .shot, .ingredient {
     width: calc(50% - 10px);
   }
 
@@ -284,13 +234,13 @@ p.year {
     width: calc(100% - 204px);
   }
 
-  .movie-show .movie h3, .actor-show .actor h3 {
+  .shot-show .shot h3, .ingredient-show .ingredient h3 {
     font-size: 24px;
     line-height: 24px;
   }
 
-  .movie a,
-  .actor a {
+  .shot a,
+  .ingredient a {
     font-size: 14px;
   }
 }

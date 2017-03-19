@@ -1,25 +1,24 @@
 <%= render partial: "shared/header" %>
-<h1>Shot Info</h1>
-
-<div class="main movie-show">
+<div class="main shot-show">
   <div class="container">
-    <div class="movie">
+  <h1>Shot Info</h1>
+    <div class="shot">
       
       <!-- Display the shot's info here -->
       <div class="info">
         <%= image_tag @shot.image %>
-        <h3 class="movie-title"><%= @shot.name %></h3>
-        <p class="movie-release-year"><%= @shot.color %></p>
-        <p class="movie-plot"><%= @shot.description %></p>
+        <h3><%= @shot.name %></h3>
+        <p><%= @shot.color %></p>
+        <p><%= @shot.description %></p>
       </div>
     </div>
 
     <h1>Ingredients</h1>
     <% @ingredients.each do |ingredient| %>
-    <div class="actor">
+    <div class="ingredient col-md-2">
       <%= image_tag ingredient.image %>
-      <h3 class="actor-name"><%= ingredient.ingredientname %></h3>
-      <p class="actor-bio"><%= ingredient.description %></p>
+      <h3><%= ingredient.ingredientname %></h3>
+      <p><%= ingredient.description %></p>
     </div>
 		<% end %>
   </div>

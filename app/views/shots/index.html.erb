@@ -1,24 +1,23 @@
  <%= render partial: "shared/header" %>
 
-<div class="container">
 
-<div class="main">
-  <div class="container">
-  <h1>Popular Shots</h1>
-  <div style="min-height: 50px;">
-    <%= link_to 'Ingredients', "/ingredients" %>
-  </div>
-  <br>
-    <% @shots.each do |shot| %>
-    <div class="movie">
-      <%= image_tag shot.image %>
-      <h3><%= shot.name %></h3>
-      <p><%= shot.description %></p>
-      <%= link_to "Learn more", shot_path(shot) %>
+  <div class="main">
+    <div class="container">
+      <h2>Popular Shots</h2>
+        <div style="min-height: 50px;">
+          <%= link_to 'Ingredients', "/ingredients" %>
+        </div>
+      <br>
+      <% @shots.each do |shot| %>
+      <div class="shot col-xs-2">
+        <%= image_tag shot.image %>
+        <h3><%= shot.name %></h3>
+        <p><%= shot.description %></p>
+        <%= link_to "Learn more", shot_path(shot) %>
+      </div>
+      <% end %>
     </div>
-    <% end %>
   </div>
-</div>
 
-</div>
- <%= render partial: "shared/footer" %>
+
+<%= render partial: "shared/footer" %>
