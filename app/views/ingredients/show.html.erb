@@ -2,7 +2,7 @@
 
 <div class="main ingredient-show">
   <div class="container">
-    <h1>Ingredients Info</h1>    
+    <h2>Ingredients Info</h2>    
     <!-- Display an ingredient's info here -->
     <div class="ingredient">
       <%= image_tag @ingredient.image %>
@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <h1>Shots</h1>
+    <h1>Used in These Shots</h1>
     <% @shots.each do |shot| %>
     <div class="shot col-md-2">
       <%= image_tag shot.image %>

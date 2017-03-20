@@ -26,11 +26,29 @@ body, html {
 }
 
 .header {
-  background-color: green;
+  background-color: black;
   height: 80px;
   float:left;
-  text-align: center;
   width: 100%;
+}
+
+.blueheader {
+  display: block;
+  background-color: #0393ff;
+  margin-top: 8px;
+  height: 1px;
+  float:left;
+  width: 100%;
+}
+
+.headertext_1 {
+  position: absolute; 
+  right: 0px; 
+  top: 0px; 
+  z-index: 1;
+  color: grey; 
+  font-size: 40px; 
+  padding-right: 37px;
 }
 
 .ad_space {
@@ -79,20 +97,35 @@ body, html {
 }
 
 .footer {
-  background-color: orange;
+  background-color: black;
   height: 80px;
   float:left;
   text-align: center;
   width: 100%;
 }
 
+.bluefooter {
+  display: block;
+  background-color: #0393ff;
+  margin-bottom: 8px;
+  height: 1px;
+  float:left;
+  width: 100%;
+}
+
 /*
   Shots
 */
+h1 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 0 0 40px 0;
+}
 
 h2 {
-  color: white;
-  font-size: 12px;
+  color: #0393ff;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -120,19 +153,20 @@ h3 a {
   text-decoration: none;
 }
 
-.shot, .ingredient {
-  display: block;
-  float: left;
-  margin: 0 10px 80px 0;
-  margin-bottom: 80px;
-  width: 184px;
-}
 
 .ingredient {
-  height: 350px;
+  display: block;
+  float: left;
+  margin: 0px 10px 150px 0;
+  width: 184px;
+  height: 300px;
 }
 
 .shot {
+  display: block;
+  float: left;
+  margin: 0 10px 80px 0;
+  width: 184px;
   height: 525px;
 }
 
@@ -151,22 +185,11 @@ h3 a {
 }
 
 
-.info {
-  display: block;
-  float: left;
-  margin: 0 0 0 40px;
-  width: calc(100% - 224px);
-}
-
-p.year {
-  color: #bcbec0;
-}
-
 /* 
   shot SHOW
 */
 .shot-show .shot, .ingredient-index, .ingredient-show .ingredient {
-  padding: 160px 0 0 0;
+  padding: 80px 0 0 0;
   width: 100%;
 }
 
@@ -195,6 +218,21 @@ p.year {
 
 .shot-show .shot p.year {
   margin: 0 0 20px 0;
+}
+
+/* Data Table for Shots */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    background-color: black;
+    color: white;
+}
+
+td, th {
+    border: 1px solid #0393ff;
+    text-align: left;
+    padding: 8px;
 }
 
 /* 
@@ -243,4 +281,46 @@ p.year {
   .ingredient a {
     font-size: 14px;
   }
+}
+
+/* Hamburger Nav */
+.sidenav {
+    font-family: "Lato", sans-serif;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: black;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }

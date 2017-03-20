@@ -30,11 +30,14 @@
         <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
           <input name="utf8" type="hidden" value="&#x2713;" />
           <input name="authenticity_token" type="hidden" value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
-          <label for="user_name">Name</label>
-          <input id="user_name" name="user[name]" type="text" />
+          <label><b>Username</b></label>
+          <br>
+          <input type="text" placeholder="Enter Username" name="uname" required>
           <br><br>
-          <label for="user_password">Password</label>
-          <input id="user_password" name="user[password]" type="password" />
+          <label><b>Password</b></label>
+          <br>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <br>
           <button type="button" style="margin: 7px;" class="btn btn-default" data-toggle="modal" data-target="#forgotModal">Forgot My Password</button>
         </form>
       </div>
