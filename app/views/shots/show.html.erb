@@ -1,51 +1,48 @@
 <%= render partial: "shared/header" %>
+
 <div class="main shot-show">
   <div class="container">
   <h2>Shot Info</h2>
     
-      
-      <!-- Display the shot's info here -->
-
+    <!-- Display the shot's info here -->
         <%= image_tag @shot.image %>
         <div class="shot-data">
           <h3><%= @shot.name %></h3>
-<table>
-  <tr>
-    <th>Topic</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>Description</td>
-    <td><%= @shot.description %></td>
-  </tr>
-  <tr>
-    <td>Color</td>
-    <td><%= @shot.color %></td>
-  </tr>
-  <tr>
-    <td>Liquid</td>
-    <td><%= @shot.liquid %></td>
-  </tr>
-  <tr>
-    <td>Flammable</td>
-    <td><%= @shot.flammable %></td>
-  </tr>
-  <tr>
-    <td>Mix Ratio</td>
-    <td><%= @shot.mixratio %></td>
-  </tr>
-  <tr>
-    <td>Accessory</td>
-    <td><%= @shot.accessory %></td>
-  </tr>
-  <tr>
-    <td>Accessory Type</td>
-    <td><%= @shot.accessorytype %></td>
-  </tr>
-</table>
+          <table>
+            <tr>
+              <th>Topic</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Description</td>
+              <td><%= @shot.description %></td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td><%= @shot.color %></td>
+            </tr>
+            <tr>
+              <td>Liquid</td>
+              <td><%= @shot.liquid %></td>
+            </tr>
+            <tr>
+              <td>Flammable</td>
+              <td><%= @shot.flammable %></td>
+            </tr>
+            <tr>
+              <td>Mix Ratio</td>
+              <td><%= @shot.mixratio %></td>
+            </tr>
+            <tr>
+              <td>Accessory</td>
+              <td><%= @shot.accessory %></td>
+            </tr>
+            <tr>
+              <td>Accessory Type</td>
+              <td><%= @shot.accessorytype %></td>
+            </tr>
+          </table>
         </div>
-      
-
 
     <h1>Ingredients</h1>
     <% @ingredients.each do |ingredient| %>

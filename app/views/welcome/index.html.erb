@@ -5,8 +5,8 @@
     <div class="welcome_message">
       <p class="wtext_1">Wecome to ShotMaker!</p>
       <p class="wtext_2">(You must be 21 to enter...or just somebody cool.)</p>
-      <!-- signup button trigger modal -->
-      <button type="button" style="margin: 7px;" class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#signupModal">Signup</button>
+      <!-- signup button to go to sign up -->
+      <%= link_to "Signup", signup_path, class: "btn btn-lg btn-primary pull-right" %>
       <!-- login button trigger modal -->
       <button type="button" style="margin:7px;" class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myModal">Login</button>
     </div>

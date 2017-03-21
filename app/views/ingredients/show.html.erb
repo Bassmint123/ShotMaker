@@ -2,13 +2,27 @@
 
 <div class="main ingredient-show">
   <div class="container">
-    <h2>Ingredients Info</h2>    
+  <h2>Ingredients Info</h2>    
+   
     <!-- Display an ingredient's info here -->
     <div class="ingredient">
       <%= image_tag @ingredient.image %>
       <div class="info">
-        <h3 class="ingredient-name"><%= @ingredient.ingredientname  %></h3>
-        <p class="ingredient-bio"><%= @ingredient.description %></p>
+        <h3><%= @ingredient.ingredientname  %></h3>
+        <table>
+          <tr>
+            <th>Topic</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>Description</td>
+            <td><%= @ingredient.description %></td>
+          </tr>
+          <tr>
+            <td>Liquor Type</td>
+            <td><%= @ingredient.liquortype %></td>
+          </tr>
+        </table>
       </div>
     </div>
 
@@ -17,11 +31,10 @@
     <div class="shot col-md-2">
       <%= image_tag shot.image %>
       <h3 class="shot-title"><%= shot.name %></h3>
-      <p class="shot-release-year"><%= shot.color %></p>
-      <p class="shot-plot"><%= shot.description %></p>
+      <p><%= shot.description %></p>
     </div>
     <% end %>
-
   </div>
 </div>
+
 <%= render partial: "shared/footer" %>

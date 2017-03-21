@@ -49,35 +49,38 @@ i36 = Ingredient.create(ingredientname: "Butterscotch Schnapps", liquortype: "Al
 
 
 s1 = Shot.create(name: "Hot Damn", description: "A fun drink to share with the man of your dreams, it leaves your breath smelling nice,	and sneaks up on you, so it may be wise to only have one of these libations.", 
-	image: "shot01.jpg", mixratio: "Whiskey, Rum, Vodka, Orange Juice", flammable: "No", liquid: "Yes", color: "Red", accessory: "No", accessorytype: "None")
+	image: "Hot-Damn_1.jpg", mixratio: "Whiskey, Rum, Vodka, Orange Juice", flammable: "No", liquid: "Yes", color: "Red", accessory: "No", accessorytype: "None")
 s2 = Shot.create(name: "Jolly Rancher", description: "A fun drink that captures the flavor of a Jolly Rancher candy treat", 
-	image: "shot01.jpg", mixratio: "Amaretto, Melon Liqueur, Grenadine, Sprite", flammable: "No", liquid: "Yes", color: "Varies", accessory: "No", accessorytype: "None")
+	image: "JollyRancher_1.jpg", mixratio: "Amaretto, Melon Liqueur, Grenadine, Sprite", flammable: "No", liquid: "Yes", color: "Varies", accessory: "No", accessorytype: "None")
 s3 = Shot.create(name: "B-52", description: "This shot lives up to its name because it feels like a bomb going down, but it is subtle enough to	make the girls list because it has a smooth, yet sweet quality. If you are feeling a little crazy, turn this shot into a real bomb, drop into a glass of milk and shoot it.", 
-	image: "shot01.jpg", mixratio: "Bailey's Irish Cream, Kahlua, Grand Marnier", flammable: "Yes", liquid: "Yes", color: "Pale Tan", accessory: "No", accessorytype: "None")
+	image: "B-52_1.jpg", mixratio: "Bailey's Irish Cream, Kahlua, Grand Marnier", flammable: "Yes", liquid: "Yes", color: "Pale Tan", accessory: "No", accessorytype: "None")
 s4 = Shot.create(name: "Mind Eraser", description: "The mind eraser is the a great shot to celebrate a win, or enjoy with friends, it lives up to its name, and is easy to take down.", 
-	image: "shot01.jpg", mixratio: "Vodka, Kahlua, Sprite", flammable: "No", liquid: "No", color: "Clear", accessory: "No", accessorytype: "None")
+	image: "Mind-Eraser_1.jpg", mixratio: "Vodka, Kahlua, Sprite", flammable: "No", liquid: "No", color: "Clear", accessory: "No", accessorytype: "None")
 s5 = Shot.create(name: "Irish Car Bomb", description: "Cheers to the Irish! This is a great party shot, because the fun comes when everyone drops the whiskey and Irish cream into the glass of Guinness and down it as fast as you can. Some bartenders will light this one on fire for you…if you ask.", 
-	image: "shot01.jpg", mixratio: "Guinness, Bailey’s Irish Cream, Irish Whiskey", flammable: "Yes", liquid: "Yes", color: "Dark", accessory: "No", accessorytype: "None")
-s6 = Shot.create(name: "Jello Shot", description: "A shot made from chilled Jello combined with vodka.", image: "shot01.jpg", mixratio: "Jello, Vodka", 
-	flammable: "No", liquid: "No", color: "Varies", accessory: "Yes", accessorytype: "Plastic medicine cups")
+	image: "Irish-Car-Bomb_1.jpg", mixratio: "Guinness, Bailey’s Irish Cream, Irish Whiskey", flammable: "Yes", liquid: "Yes", color: "Dark", accessory: "No", accessorytype: "None")
+s6 = Shot.create(name: "Jello Shot", description: "A shot made from chilled Jello combined with vodka.", 
+	image: "Jello-Shots_1.jpg", mixratio: "Jello, Vodka", flammable: "No", liquid: "No", color: "Varies", accessory: "Yes", accessorytype: "Plastic medicine cups")
 s7 = Shot.create(name: "White Gummy Bear", description: "The white gummy bear lives up to its name because like a gummy bear, it has that sweet tart quality.", 
-	image: "shot01.jpg", mixratio: "Cherry Vodka, Peach Schnapps, Pineapple Juice, Splash Sprite", flammable: "No", liquid: "Yes", color: "Amber", accessory: "No", accessorytype: "None")
+	image: "White-Gummy-Bear_1.jpg", mixratio: "Cherry Vodka, Peach Schnapps, Pineapple Juice, Splash Sprite", flammable: "No", liquid: "Yes", color: "Amber", accessory: "No", accessorytype: "None")
 s8 = Shot.create(name: "Absolut Legspreader", description: "Um, one for the guys most popular shot list, because the name says it all. It is also green...like the green M&Ms", 
-	image: "shot01.jpg", mixratio: "Absolut Vodka, Midori", flammable: "No", liquid: "Yes", color: "Clear ", accessory: "No", accessorytype: "None")
+	image: "Absolut_Legspreader_1.jpg", mixratio: "Absolut Vodka, Midori", flammable: "No", liquid: "Yes", color: "Clear ", accessory: "No", accessorytype: "None")
 s9 = Shot.create(name: "Red Headed Slut", description: "This is not the shot to order in front of your mother-in-law, especially if you are a red head, however it is a popular shot for bachelorette parties.", 
-	image: "shot01.jpg", mixratio: "Peach Schnapps, Jagermeister, Cranberry Juice", flammable: "No", liquid: "Yes", color: "Red", accessory: "No", accessorytype: "None")
+	image: "Red-Headed-Slut_1.jpg", mixratio: "Peach Schnapps, Jagermeister, Cranberry Juice", flammable: "No", liquid: "Yes", color: "Red", accessory: "No", accessorytype: "None")
 s10 = Shot.create(name: "Kick In The Balls", description: "The name of this shot says it all; it will kick you in the balls! Your liver may need a vacation after this one.", 
-	image: "shot01.jpg", mixratio: "Cuervo Gold Tequila, Jack Daniels Whiskey, Yukon Jack", flammable: "Yes", liquid: "Yes", color: "Dark Amber", accessory: "No", accessorytype: "None")
+	image: "Kick-In-The-Balls_1.jpg", mixratio: "Cuervo Gold Tequila, Jack Daniels Whiskey, Yukon Jack", flammable: "Yes", liquid: "Yes", color: "Dark Amber", accessory: "No", accessorytype: "None")
 s11 = Shot.create(name: "Motor Oil", description: "No oil filter needed for this oil change! However, this shot will surely keep your brain cells moving freely.", 
-	image: "shot01.jpg", mixratio: "Jagermeister, Goldschlager, Malibu Rum, Peppermint Schnapps", flammable: "No", liquid: "Yes", color: "Dark", accessory: "No", accessorytype: "None")
+	image: "Motor-oil_1.jpg", mixratio: "Jagermeister, Goldschlager, Malibu Rum, Peppermint Schnapps", flammable: "No", liquid: "Yes", color: "Dark", accessory: "No", accessorytype: "None")
 s12 = Shot.create(name: "Kamikaze", description: "The Kamikaze is named after the Japanese fighters who would die to complete their mission. This shot will not kill you, unless you are on a mission to drink yourself to death.", 
-	image: "shot01.jpg", mixratio: "Vodka, Triple Sec, Limes", flammable: "No", liquid: "Yes", color: "Clear", accessory: "No", accessorytype: "None")
+	image: "Kamikaze_1.jpg", mixratio: "Vodka, Triple Sec, Limes", flammable: "No", liquid: "Yes", color: "Clear", accessory: "No", accessorytype: "None")
 s13 = Shot.create(name: "Flaming Lemon Drop", description: "The fiery cousin of the lemon drop…this is a crowd pleaser, sweet and sour with an extra kick of fire! A great for any occasion.", 
-	image: "shot01.jpg", mixratio: "Vodka, Sambuca, Lemon, Sugar", flammable: "Yes", liquid: "Yes", color: "Clear", accessory: "No", accessorytype: "None")
-s14 = Shot.create(name: "Afterburner", description: "There is rumor that the thick liqueur After Shock, a product by Jim Beam brand will crystalize in your stomach and release more alcohol the next morning…this of course is a myth. However, this shot will warm your friends’ stomachs, and now you have a good story to tell them after they drink it. Keep them guessing.", 
-	image: "shot01.jpg", mixratio: "Citrus After Shock Liqueur, Bacardi Rum 151", flammable: "No", liquid: "Yes", color: "Dark Amber", accessory: "No", accessorytype: "None")
-s15 = Shot.create(name: "Buttery Nipple", description: " It will not knock your socks off but it is a fun shot to say aloud.", 
-	image: "shot01.jpg", mixratio: "Bailey’s Irish Cream, Butterscotch Schnapps", flammable: "No", liquid: "Yes", color: "Tan", accessory: "No", accessorytype: "None")
+	image: "Flamming-Lemon-Drop_1.jpg", mixratio: "Vodka, Sambuca, Lemon, Sugar", flammable: "Yes", liquid: "Yes", color: "Clear", accessory: "No", accessorytype: "None")
+s14 = Shot.create(name: "2Killya!", description: "This classic shot of Tequila is best with salt and a bite of lime as your mind heads south.", 
+	image: "2Killya_1.jpg", mixratio: "Cuervo Gold Tequila", flammable: "No", liquid: "Yes", color: "Golden", accessory: "Yes", accessorytype: "Lime slice")
+s15 = Shot.create(name: "Buttery Nipple", description: "It will not knock your socks off but it is a fun shot to say aloud.", 
+	image: "Butterynipple_1.jpg", mixratio: "Bailey’s Irish Cream, Butterscotch Schnapps", flammable: "No", liquid: "Yes", color: "Tan", accessory: "No", accessorytype: "None")
+s16 = Shot.create(name: "Afterburner", description: "There is rumor that the thick liqueur After Shock, a product by Jim Beam brand will crystalize in your stomach and release more alcohol the next morning…this of course is a myth. However, this shot will warm your friends’ stomachs, and now you have a good story to tell them after they drink it. Keep them guessing.", 
+	image: "Afterburner_1.jpg", mixratio: "Citrus After Shock Liqueur, Bacardi Rum 151", flammable: "No", liquid: "Yes", color: "Dark Amber", accessory: "No", accessorytype: "None")
+
 
 
 s1.ingredients << [i1, i2, i3, i4]
@@ -93,5 +96,6 @@ s10.ingredients << [i24, i25, i22]
 s11.ingredients << [i19, i26, i27, i28]
 s12.ingredients << [i3, i29, i30]
 s13.ingredients << [i3, i31, i32, i33]
-s14.ingredients << [i34, i35]
+s14.ingredients << [i25]
 s15.ingredients << [i9, i36]
+s16.ingredients << [i34, i35]

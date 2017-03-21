@@ -2,11 +2,11 @@
 <div class="header">
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <%= link_to "Home", "/#", class: "a:hover" %>
     <%= link_to "Shots", "/shots", class: "a:hover" %>
     <%= link_to "Ingredients", "/ingredients", class: "a:hover" %>
     <%= link_to "About", "#", class: "a:hover" %>
-    <%= link_to "Contact", "#", class: "a:hover" %>
-    <%= link_to "Login", "/#", class: "a:hover" %>
+    <%= link_to "Contact", "/contact", class: "a:hover" %>
   </div>
     <span style="padding: 7px 0px 0px 7px;font-size:30px;cursor:pointer; color:white" onclick="openNav()">&#9776</span>
   <div class="headertext_1">ShotMaker</div>
