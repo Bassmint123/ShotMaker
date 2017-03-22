@@ -3,7 +3,9 @@
 
 
 /* mixins, variables, etc. */
-$gray-medium-light: #eaeaea;
+ $gray-medium-light: #eaeaea;
+
+
 
 /* This is all for the debug box */
 @mixin box_sizing {
@@ -21,4 +23,16 @@ $gray-medium-light: #eaeaea;
   width: 100%;
   margin-top: 45px;
   @include box_sizing;
+}
+
+/* formatting for forms */
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
 }

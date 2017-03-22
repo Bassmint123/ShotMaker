@@ -16,6 +16,7 @@
 //= require_tree .
 //= require bootstrap
 
+
 /* Script for the side hamburger menu */
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";

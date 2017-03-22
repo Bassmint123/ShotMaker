@@ -1,6 +1,19 @@
 
 <div class="welcome_container">
-<div class="ad_space"></div>
+
+<div class="ad_space">
+<!-- Side Navigation -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <%= link_to "Home", "/#", class: "a:hover" %>
+    <%= link_to "Shots", "/shots", class: "a:hover" %>
+    <%= link_to "Ingredients", "/ingredients", class: "a:hover" %>
+    <%= link_to "About", "#", class: "a:hover" %>
+    <%= link_to "Contact", "/contact", class: "a:hover" %>
+  </div>
+  <span style="padding: 7px 0px 0px 7px;font-size:30px;cursor:pointer; color:white" onclick="openNav()">&#9776</span>
+</div>
+
   <div class="welcome_shot">
     <div class="welcome_message">
       <p class="wtext_1">Wecome to ShotMaker!</p>
@@ -8,7 +21,7 @@
       <!-- signup button to go to sign up -->
       <%= link_to "Signup", signup_path, class: "btn btn-lg btn-primary pull-right" %>
       <!-- login button trigger modal -->
-      <button type="button" style="margin:7px;" class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myModal">Login</button>
+      <%= link_to "Login", "#myModal", class: "btn btn-primary btn-lg pull-right", "data-toggle" => "modal" %>
     </div>
   </div>
   <div class="ad_space">
@@ -45,39 +58,6 @@
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
        <!-- <input class="btn btn-primary" name="commit" type="submit" value="Login" /> -->
         <%= link_to 'Login', shots_path, :class=>"btn btn-primary btn-lgt" %>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- signup modal -->
-<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="signupModalLabel">Sign-up for a new account</h4>
-      </div>
-      <div class="modal-body">
-        <br>
-        <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
-          <label for="user_name">Name</label>
-          <input id="user_name" name="user[name]" type="text" />
-          <br>
-          <label for="user_email">Email</label>
-          <input id="user_email" name="user[email]" type="email" />
-          <br>
-          <label for="user_password">Password</label>
-          <input id="user_password" name="user[password]" type="password" />
-          <br>
-          <label for="user_password_confirmation">Confirmation</label>
-          <input id="user_password_confirmation" name="user[password_confirmation]" type="password" />
-          <br>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </div>
