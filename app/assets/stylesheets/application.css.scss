@@ -67,8 +67,11 @@ body, html {
 }
 
 .welcome_message {
-  margin-left: 60%; 
-  padding-top: 175px;
+  float: left;
+  min-width: 450px;
+  min-height: 270px;
+  margin-top: 120px;
+  margin-left: 60%;
 }
 
 .wtext_1 {
@@ -84,6 +87,14 @@ body, html {
   padding-right: 7px; 
   text-align: right;
 }
+
+.login-sign-up-buttons {
+  right: 0px; 
+  float:right; 
+  min-width:190px; 
+  min-height: 40px; 
+  margin-top: 50px;
+}  
 
 .container {
   margin: 0 auto 0;

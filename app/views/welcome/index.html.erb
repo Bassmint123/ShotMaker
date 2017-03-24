@@ -18,10 +18,12 @@
     <div class="welcome_message">
       <p class="wtext_1">Wecome to ShotMaker!</p>
       <p class="wtext_2">(You must be 21 to enter...or just somebody cool.)</p>
-      <!-- signup button to go to sign up -->
-      <%= link_to "Signup", signup_path, class: "btn btn-lg btn-primary pull-right" %>
-      <!-- login button trigger modal -->
-      <%= link_to "Login", "#myModal", class: "btn btn-primary btn-lg pull-right", "data-toggle" => "modal" %>
+      <div class="login-sign-up-buttons">
+        <!-- login button trigger modal -->
+        <%= link_to "Login", "#myModal", class: "btn btn-primary btn-lg pull-left", "data-toggle" => "modal" %>
+        <!-- signup button to go to sign up -->
+        <%= link_to "Signup", signup_path, class: "btn btn-lg btn-primary pull-right" %>
+      </div>
     </div>
   </div>
   <div class="ad_space">
