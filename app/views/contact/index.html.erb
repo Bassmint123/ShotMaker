@@ -8,10 +8,10 @@
 <div class="container2">
   <form action="/action_page.html.erb">
     <label for="fname">First Name</label><br>
-    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+    <input class="form-control input-lg" type="text" id="fname" name="firstname" placeholder="Your name.."><br>
 
     <label for="lname">Last Name</label><br>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+    <input class="form-control input-lg" type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
 
     <label for="country">Country</label>
     <select id="country" name="country" placeholder="Write something..">
@@ -26,7 +26,7 @@
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    <%= link_to 'Submit', contact_path, :class=>"btn btn-primary btn-lgt" %>
+    <%= link_to 'Submit', contact_path, :class=>"btn btn-primary btn-lg" %>
   </form>
 </div>
 

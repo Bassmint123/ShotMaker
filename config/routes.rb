@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  
   get '/signup' => 'users#new'
   resources :users
 
@@ -8,6 +9,7 @@ Rails.application.routes.draw do
   get '/shots/:id' => 'shots#show', as: :shot
   get '/ingredients' => 'ingredients#index'
   get '/ingredients/:id' => 'ingredients#show', as: :ingredient
+  get '/about' => 'about#index'
   get '/contact' => 'contact#index'
   get 'welcome/index'
   root 'welcome#index'
