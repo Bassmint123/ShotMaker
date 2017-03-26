@@ -10,6 +10,6 @@
 
   <body>
     <%= yield %>
-    <%#= debug(params) if Rails.env.development? %>  <%# using this for debugging, but will eliminate later %>
+    <%= debug(params) if Rails.env.development? %>  <%# using this for debugging in development env, but will eliminate later %>
   </body>
 </html>

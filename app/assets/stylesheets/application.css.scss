@@ -97,6 +97,11 @@ body, html {
 }  
 
 .container {
+ /* margin: 0 auto 0; */
+  width: 1000px;
+}
+
+.container3 {
   margin: 0 auto 0;
   width: 1000px;
 }
@@ -169,8 +174,8 @@ h3 a {
   display: block;
   float: left;
   margin: 0px 10px 150px 0;
-  width: 184px;
-  height: 300px;
+  max-width: 1000px;
+  height: 250px;
 }
 
 .shot {
@@ -200,13 +205,13 @@ h3 a {
   Shot Show
 */
 .shot-show .shot, .ingredient-index, .ingredient-show .ingredient {
-  padding: 80px 0 0 0;
+  padding: 60px 0 0 0;
   width: 100%;
 }
 
 .shot-show .shot img, .ingredient-show .ingredient img {
   float: left;
-  width: 184px;
+  width: 250px;
 }
 
 .shot-show .shot h3, .ingredient-show .ingredient h3 {
@@ -216,12 +221,15 @@ h3 a {
   line-height: 40px;
 }
 
+
 .info {
+  position: absolute;
   display: block;
   float: left;
-  margin: 0 0 0 40px;
-  width: calc(100% - 224px);
+  margin: 0 0 0 290px;
+  max-width: 900px;
 }
+
 
 .shot-show .shot p {
   display: block;
@@ -278,10 +286,14 @@ td, th {
     width: calc(50% - 10px);
   }
 
+/*
   .info {
     margin: 0 0 0 20px;
     width: calc(100% - 204px);
   }
+*/
+
+
 
   .shot-show .shot h3, .ingredient-show .ingredient h3 {
     font-size: 24px;
@@ -372,5 +384,10 @@ td, th {
     .carousel-caption {
       display: none; 
     }
+  }
+
+  .abouttext p {
+    font-size: 18px;
+    padding-top: 7px;
   }
 

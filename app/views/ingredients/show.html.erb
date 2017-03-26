@@ -5,10 +5,10 @@
   <h2>Ingredients Info</h2>    
    
     <!-- Display an ingredient's info here -->
-    <div class="ingredient">
+    <div class="ingredient" style ="margin-right:200px ;background-color:black">
       <%= image_tag @ingredient.image %>
-      <div class="info">
-        <h3><%= @ingredient.ingredientname  %></h3>
+     <div class="info">
+       <h3><%= @ingredient.ingredientname  %></h3>
         <table>
           <tr>
             <th>Topic</th>
@@ -26,9 +26,10 @@
       </div>
     </div>
 
+
     <h1>Used in These Shots</h1>
     <% @shots.each do |shot| %>
-    <div class="shot col-md-2">
+    <div class="shot col-md-3">
       <%= image_tag shot.image %>
       <h3 class="shot-title"><%= shot.name %></h3>
       <p><%= shot.description %></p>

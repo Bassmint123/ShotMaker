@@ -4,9 +4,8 @@
   <div class="container">
     <h2>Display of Ingredients</h2>
 
-  <div class="main ingredient-index">
+  <div class="main ingredient-index"> 
       <div class="container">
-        <div class="row">
           <% @ingredients.each do |ingredient| %>
           <div class="ingredient col-xs-2">
             <%= image_tag ingredient.image %>
@@ -14,9 +13,8 @@
             <%= link_to "Learn more", ingredient_path(ingredient) %>
           </div>
           <% end %>
-        </div>
       </div>
-  </div>    
-</div>
+    </div>
+  </div> 
 </div>
 <%= render partial: "shared/footer" %>
