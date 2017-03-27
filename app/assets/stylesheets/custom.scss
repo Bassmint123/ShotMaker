@@ -37,6 +37,23 @@ input {
   height: auto !important;
 }
 
+/* error messages partial */
+#error_explanation {
+   color: red;
+   ul {
+     color: red;
+     margin: 0 0 30px 0;
+   }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+
 /* sidebar for users page */
 aside {
   section.user_info {
