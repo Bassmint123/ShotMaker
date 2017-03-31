@@ -50,9 +50,10 @@
       <%= image_tag ingredient.image %>
       <h3><%= ingredient.ingredientname %></h3>
       <p><%= ingredient.description %></p>
+      <%= link_to "Learn more", ingredient_path(ingredient) %>
     </div>
 		<% end %>
   </div>
-	<div style="display:block; min-height: 40px; width: 100%;"></div>
+	<div style="display:block; min-height: 70px; width: 100%;"></div>
 </div>
 <%= render partial: "shared/footer" %>

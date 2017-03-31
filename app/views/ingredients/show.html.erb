@@ -33,6 +33,7 @@
       <%= image_tag shot.image %>
       <h3 class="shot-title"><%= shot.name %></h3>
       <p><%= shot.description %></p>
+      <%= link_to "Learn more", shot_path(shot) %>
     </div>
     <% end %>
   </div>
