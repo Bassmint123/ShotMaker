@@ -3,6 +3,10 @@
   <%#= @user.name %>, <%= @user.email %>
 </div>
 -->
+<%= render partial: "shared/header" %>
+
+<div class="main">
+  <div class="container"> 
 
 <% provide(:title, @user.name) %>
 <div class="row">
@@ -15,3 +19,11 @@
     </section>
   </aside>
 </div>
+
+
+<div style="min-height: 50px; display:block"></div>
+
+  </div>
+</div>
+
+<%= render partial: "shared/footer" %>

@@ -27,8 +27,14 @@
       <p class="wtext_1">Wecome to ShotMaker!</p>
       <p class="wtext_2">(You must be 21 to enter...or just somebody cool.)</p>
       <div class="login-sign-up-buttons">
-        <!-- login button trigger modal -->
-        <%= link_to "Login", "#myModal", class: "btn btn-primary btn-lg pull-left", "data-toggle" => "modal" %>
+        <% if logged_in? %>
+          <!-- logout button diplays -->
+          <%= link_to "Logout", logout_path, method: "delete", class: "btn btn-primary btn-lg pull-left"%>
+        <% else %>
+          <!-- login button diplays -->
+          <%= link_to "Login", login_path, class: "btn btn-primary btn-lg pull-left"%>
+          <%#= link_to "Login", "#myModal", class: "btn btn-primary btn-lg pull-left", "data-toggle" => "modal" %>
+        <% end %>
         <!-- signup button to go to sign up -->
         <%= link_to "Signup", signup_path, class: "btn btn-lg btn-primary pull-right" %>
       </div>

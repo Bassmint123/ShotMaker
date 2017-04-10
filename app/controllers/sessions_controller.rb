@@ -16,6 +16,8 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    log_out  # this method is defined in the sessions_help.rb in ./app/helpers
+    redirect_to root_url
   end
 
 end
