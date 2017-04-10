@@ -7,6 +7,15 @@
     <%= link_to "Ingredients", "/ingredients", class: "a:hover" %>
     <%= link_to "About", "/about", class: "a:hover" %>
     <%= link_to "Contact", "/contact", class: "a:hover" %>
+    <% if logged_in? %>
+      <%= link_to "Users", '#' %>
+      <%= link_to "Profile", current_user %>
+      <%= link_to "Settings", '#' %>
+      <%= link_to "Log out", logout_path, method: "delete" %>
+    <% else %>
+      <%= link_to "Log in", login_path %>
+    <% end %>
+
   </div>
     <span style="padding: 7px 0px 0px 7px;font-size:30px;cursor:pointer; color:white" onclick="openNav()">&#9776</span>
   <div class="headertext_1">ShotMaker</div>
