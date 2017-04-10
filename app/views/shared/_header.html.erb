@@ -11,7 +11,7 @@
       <%= link_to "Users", '#' %>
       <%= link_to "Profile", current_user %>
       <%= link_to "Settings", '#' %>
-      <%= link_to "Log out", logout_path, method: "delete" %>
+      <%= link_to "Logout", "#myModal", "data-toggle" => "modal" %>
     <% else %>
       <%= link_to "Log in", login_path %>
     <% end %>
@@ -20,5 +20,28 @@
     <span style="padding: 7px 0px 0px 7px;font-size:30px;cursor:pointer; color:white" onclick="openNav()">&#9776</span>
   <div class="headertext_1">ShotMaker</div>
   <div class=blueheader></div>
+</div>
+
+
+
+<!-- logout modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Confirm</h4>
+      </div>
+      <div class="modal-body">
+        <br>
+        <p>Are you sure you want to logout?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Close</button>
+       <!-- <input class="btn btn-primary" name="commit" type="submit" value="Login" /> -->
+        <%= link_to "Logout", logout_path, method: "delete", class: "btn btn-primary btn-lg pull-left"%>
+      </div>
+    </div>
+  </div>
 </div>
 
