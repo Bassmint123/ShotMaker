@@ -22,6 +22,7 @@
   <span style="padding: 7px 0px 0px 7px;font-size:30px;cursor:pointer; color:white" onclick="openNav()">&#9776</span>
 </div>
 
+<!-- homepage image -->
   <div class="welcome_shot">
     <div class="welcome_message">
       <p class="wtext_1">Wecome to ShotMaker!</p>
@@ -66,34 +67,3 @@
     </div>
   </div>
 </div>
-
-
-<!-- forgot password modal -->
-<div class="modal fade" id="forgotModal" tabindex="-1" role="dialog" aria-labelledby="forgotModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close btn-lg" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="forgotModalLabel">Get a new password</h4>
-      </div>
-      <div class="modal-body">
-        <br>
-        <div style="height: 100px">
-        <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
-          <p>Enter your email address and a new password will be sent.</p>
-          <label for="user_email">Email</label>
-          <input class="form-control input-lg" id="user_email" name="user[email]" type="email" />
-          <br>
-        </form>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary btn-lg">Submit</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
