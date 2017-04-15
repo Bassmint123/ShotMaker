@@ -10,7 +10,7 @@
     <% if logged_in? %>
       <%= link_to "Users", '#' %>
       <%= link_to "Profile", current_user %>
-      <%= link_to "Settings", '#' %>
+      <%= link_to "Settings", edit_user_path(current_user) %>
       <%= link_to "Logout", "#myModal", "data-toggle" => "modal" %>
     <% else %>
       <%= link_to "Log in", login_path %>
