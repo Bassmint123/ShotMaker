@@ -5,9 +5,10 @@
   <h2>Ingredients Info</h2>    
    
     <!-- Display an ingredient's info here -->
-    <div class="ingredient" style ="margin-right:200px ;background-color:black">
-      <%= image_tag @ingredient.image %>
-     <div class="info">
+   <!-- <div class="ingredient" style ="margin-right:200px ;background-color:black"> -->
+      <%= image_tag @ingredient.image, :class => "ingr_image" %>
+     <!-- <div class="info"> -->
+     <div class="shot-data">
        <h3><%= @ingredient.ingredientname  %></h3>
         <table>
           <tr>
@@ -24,7 +25,7 @@
           </tr>
         </table>
       </div>
-    </div>
+   <!-- </div>  -->
 
 
     <h1>Used in These Shots</h1>

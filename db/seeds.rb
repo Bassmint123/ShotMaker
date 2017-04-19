@@ -85,7 +85,7 @@ s16 = Shot.create(name: "Afterburner", description: "There is rumor that the thi
 s17 = Shot.create(name: "Shot In The Temple", description: "This is an achohol free shot that is a parity on the kitty cocktail Shirley Temple. Great for those wanting to do shots with their party, but still need to drive sober. A full price shot to fool those around you.", 
 	image: "Shot-In-The-Temple_1.jpg", mixratio: "Sprite, Grenadine", flammable: "No", liquid: "Yes", color: "Red", accessory: "No", accessorytype: "None")
 s18 = Shot.create(name: "Crazy Arnold", description: "An achohol free shot which is a classic Arnold Palmer in disguise. Works perfect for those wanting to do shots with everyone, but are still fresh out of rehab. Often charged as a regular shot for appearance.", 
-	image: "Crazy-Arnold_1.jpg", mixratio: "Ice Tea, Lemonade", flammable: "No", liquid: "Yes", color: "Red", accessory: "Yes", accessorytype: "Lemon")
+	image: "Crazy-Arnold_1.jpg", mixratio: "Ice Tea, Lemonade", flammable: "No", liquid: "Yes", color: "Tan", accessory: "Yes", accessorytype: "Lemon")
 
 
 s1.ingredients << [i1, i2, i3, i4]
@@ -106,3 +106,12 @@ s15.ingredients << [i9, i36]
 s16.ingredients << [i34, i35]
 s17.ingredients << [i7, i8]
 s18.ingredients << [i32, i37, i38]
+
+
+User.create!(name: "Example User", email: "example@shotmaker.com", password: "foobar", password_confirmation: "foobar", image:"Crazy-Arnold_1.jpg")
+99.times do |n|
+  name = Faker::Name.name
+  email = "example-#{n+1}@shotmaker.com"
+  password = "password"
+  User.create!(name: name, email: email, password: password, password_confirmation: password)
+end

@@ -1,6 +1,6 @@
 <%= render partial: "shared/header" %>
 
-<div class="main shot-show">
+<div class="main ingredient-show"> <!-- <div class="main shot-show">  -->
   <div class="container">
   <h2>Shot Info</h2>
     
@@ -46,7 +46,7 @@
 
     <h1>Ingredients</h1>
     <% @ingredients.each do |ingredient| %>
-    <div class="ingredient col-md-2">
+    <div class="shot col-md-3">   <!-- <div class="ingredient col-md-2">  -->
       <%= image_tag ingredient.image %>
       <h3><%= ingredient.ingredientname %></h3>
       <p><%= ingredient.description %></p>

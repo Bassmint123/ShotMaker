@@ -169,7 +169,6 @@ h3 a {
   text-decoration: none;
 }
 
-
 .ingredient {
   display: block;
   float: left;
@@ -178,12 +177,25 @@ h3 a {
   height: 250px;
 }
 
+.ingr_image {
+  max-width: 174px;
+  max-height: 273px; 
+}
+
 .shot {
   display: block;
   float: left;
   margin: 0 10px 80px 0;
   width: 184px;
   height: 525px;
+}
+
+.ing {
+  display: block;
+  float: left;
+  margin: 0 10px 80px 0;
+  width: 184px;
+  height: 250px;
 }
 
 .shot:nth-child(5n + 6), .ingredient:nth-child(5n + 6)  {
@@ -407,4 +419,14 @@ td, th {
     margin-left: 0;
   }
   
+  /* Users index */
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
 
