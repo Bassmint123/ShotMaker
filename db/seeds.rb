@@ -25,7 +25,7 @@ i12 = Ingredient.create(ingredientname: "Guinness", liquortype: "Alchohol", desc
 i13 = Ingredient.create(ingredientname: "Irish Whiskey", liquortype: "Alchohol", description: "Irish whiskey is whiskey made on the island of Ireland. The word whiskey is an Anglicisation of uisce beatha or uisge beatha, a phrase from the Goidelic branch of languages meaning water of life.", image: "Irish_Whiskey_1.jpg")
 i14 = Ingredient.create(ingredientname: "Jello", liquortype: "Non-Alchohol", description: "A classic jelly desert served chilled.", image: "Jello_1.jpg")
 i15 = Ingredient.create(ingredientname: "Cherry Vodka", liquortype: "Alchohol", description: "Vodka with a cherry flavor.", image: "Cherry_Vodka_1.jpg")
-i16 = Ingredient.create(ingredientname: "Peach Schnapps", liquortype: "Alchohol", description: "A peach flavored distilled fruit brandy, and inexpensive flavored liqueur made by adding fruit syrups, spices, or artificial flavorings to neutral grain spirits.", image: "Cherry_Vodka_1.jpg")
+i16 = Ingredient.create(ingredientname: "Peach Schnapps", liquortype: "Alchohol", description: "A peach flavored distilled fruit brandy, and inexpensive flavored liqueur made by adding fruit syrups, spices, or artificial flavorings to neutral grain spirits.", image: "Peach_Schnapps_1.jpg")
 i17 = Ingredient.create(ingredientname: "Pineapple Juice", liquortype: "Non-Alchohol", description: "Pure fresh squeezed pineapple or concentrate chilled.", image: "Pineapple_Juice_1.jpg")
 i18 = Ingredient.create(ingredientname: "Midori", liquortype: "Alchohol", description: "Midori is a sweet, bright-green-coloured, muskmelon-flavored liqueur. It is manufactured in Japan, United States, Mexico, and France, although it was made exclusively in Japan until 1987. Midori is usually 20–21 percent alcohol by volume.", image: "Midori_1.jpg" )
 i19 = Ingredient.create(ingredientname: "Jager meister", liquortype: "Alchohol", description: "Jägermeister is a German digestif made with 56 herbs and spices at a strength of 35 percent alcohol by volume.", image: "ingredient01.jpg")
@@ -48,6 +48,16 @@ i35 = Ingredient.create(ingredientname: "Bacardi Rum 151", liquortype: "Alchohol
 i36 = Ingredient.create(ingredientname: "Butter-scotch Schnapps", liquortype: "Alchohol", description: "A butterscotch flavored distilled brandy, and inexpensive flavored liqueur with spices, or artificial flavorings to neutral grain spirits.", image: "ingredient01.jpg")
 i37 = Ingredient.create(ingredientname: "Ice Tea", liquortype: "Non-Alchohol", description: "A classic drink, sweetened or unsweetened, that cools the senses. Made from tea leaves and steeped in hot water and them iced down.", image: "Ice_Tea_1.jpg")
 i38 = Ingredient.create(ingredientname: "Lemonade", liquortype: "Non-Alchohol", description: "A thrist quencher made from squeezed lemons and sugar. Most mixes will require plain lemonade (not pink!) with a very pale egg shell yellow-white color.", image: "Lemonade_1.jpg")
+i39 = Ingredient.create(ingredientname: "Creme De Menthe", liquortype: "Alchohol", description: "A concentrated mint liqueur. Its flavor primarily derives from Corsican mint or dried peppermint. It is available commercially in a colorless version and a green version.", image: "ingredient01.jpg")
+i40 = Ingredient.create(ingredientname: "Banana Schnapps", liquortype: "Alchohol", description: "Fruity, tropical, an ideal addition to all kinds of yummy cocktails, from chocolate banana martinis to a sweet, coconutty, tropical punch.", image: "ingredient01.jpg")
+i41 = Ingredient.create(ingredientname: "White Creme De Cacao", liquortype: "Alchohol", description: "A colorless chocolate-flavored liqueur made from the cacao seed.", image: "ingredient01.jpg")
+i42 = Ingredient.create(ingredientname: "Apple Cider", liquortype: "Non-Alchohol", description: "An unfiltered, unsweetened, non-alcoholic beverage made from apples.", image: "ingredient01.jpg")
+i43 = Ingredient.create(ingredientname: "Cinnamon Sugar", liquortype: "Non-Alchohol", description: "Cinnamon sugar is a mixture of ground cinnamon and granulated sugar used as a spice for desserts. ", image: "ingredient01.jpg")
+i44 = Ingredient.create(ingredientname: "Whipped Cream", liquortype: "Non-Alchohol", description: "Whipped cream is cream that is whipped by a whisk or mixer until it is light and fluffy. Whipped cream is often sweetened and sometimes flavored with vanilla.", image: "ingredient01.jpg")
+i45 = Ingredient.create(ingredientname: "Cognac", liquortype: "Non-Alchohol", description: "Named after the town of Cognac, France, is a variety of brandy. It is produced in the wine-growing region surrounding the town.", image: "ingredient01.jpg")
+i46 = Ingredient.create(ingredientname: "Caramel Sauce", liquortype: "Non-Alchohol", description: "A beige to dark-brown confectionery product made by heating a variety of sugars.", image: "ingredient01.jpg")
+i47 = Ingredient.create(ingredientname: "Blue Food Coloring", liquortype: "Non-Alchohol", description: "A liquid form of Blue No. 2", image: "ingredient01.jpg")
+i48 = Ingredient.create(ingredientname: "Club Soda", liquortype: "Non-Alchohol", description: "Carbonated water is water into which carbon dioxide gas under pressure has been dissolved.", image: "ingredient01.jpg")
 
 
 s1 = Shot.create(name: "Hot Damn", description: "A fun drink to share with the man of your dreams, it leaves your breath smelling nice,	and sneaks up on you, so it may be wise to only have one of these libations.", 
@@ -86,6 +96,26 @@ s17 = Shot.create(name: "Shot In The Temple", description: "This is an achohol f
 	image: "Shot-In-The-Temple_1.jpg", mixratio: "Sprite, Grenadine", flammable: "No", liquid: "Yes", color: "Red", accessory: "No", accessorytype: "None")
 s18 = Shot.create(name: "Crazy Arnold", description: "An achohol free shot which is a classic Arnold Palmer in disguise. Works perfect for those wanting to do shots with everyone, but are still fresh out of rehab. Often charged as a regular shot for appearance.", 
 	image: "Crazy-Arnold_1.jpg", mixratio: "Ice Tea, Lemonade", flammable: "No", liquid: "Yes", color: "Tan", accessory: "Yes", accessorytype: "Lemon")
+s19 = Shot.create(name: "Anaconda", description: "Watch how you handle this viper because it packs a punch. The Sambuca gives this shot a little bit of Italian twist while the flaming rum gives it some cool optics. Truly a shot for snake enthusiasts.", 
+	image: "Anaconda_1.jpg", mixratio: "Whiskey, Sambuca, Bacardi Rum 151", flammable: "Yes", liquid: "Yes", color: "Tan", accessory: "No", accessorytype: "None")
+s20 = Shot.create(name: "Bob Marley", description: "A sweet tribute to Bob Marley and the colors of Jamaican Rastaman. You will be singing We Be Jammin after slamming a few of these colorful shots. A very fruity shot with a hint of mint.", 
+	image: "Bob-Marley_1.jpg", mixratio: "Creme De Menthe, Banana Schnapps, Grenadine", flammable: "No", liquid: "Yes", color: "Red, Yellow, Green", accessory: "No", accessorytype: "None")
+s21 = Shot.create(name: "Screaming Orgasm", description: "This is fun to say out loud as you request it from the bartender! A shot that goes down smoothly with full body and has a creamy taste. Do not let the light tan color fool you. A couple of these will have a your head spinning and leave you squirming around in orgasmic fashion.", 
+	image: "Screaming-Orgasm_1.jpg", mixratio: "Grenadine, Kahlua, Baileys Irish Cream, White Creme de Cacao ", flammable: "No", liquid: "Yes", color: "Tan", accessory: "No", accessorytype: "None")
+s22 = Shot.create(name: "Bloody Brain", description: "Truly one of the most visually disturbing shots by appearance. It resembles a biological hazard from a surgery gone wrong. Great for Halloween. This shot has a very sweet flavor. The Irish Cream does not fully mix with the Peach Schnapps while the Grenedine gives it bloody highlights.", 
+	image: "Bloody-Brain_1.jpg", mixratio: "Peach Schnapps, Bailey Irish Cream, Grenadine", flammable: "No", liquid: "Yes", color: "Red, Tan", accessory: "No", accessorytype: "None")
+s23 = Shot.create(name: "Apple Pie", description: "A shot that taste like apple pie. A tribute to grandma's home cooking except with a kick of vodka", 
+	image: "Apple-Pie_1.jpg", mixratio: "Vodka, Apple Cider, Cinnamon Sugar, Whipped Cream, Optional Caramel Sauce", flammable: "No", liquid: "Yes", color: "Caramel", accessory: "No", accessorytype: "None")
+s24 = Shot.create(name: "Irish Flag", description: "There will surely be a pot of gold awaiting you after downing this tri-color tribute to the Irish land. This shot features a minty flavor and makes you feel the luck of the Irish. Perfect for St. Patrick's Day", 
+	image: "Irish-Flag_1.jpg", mixratio: "Creme De Menthe, Baileys Irish cream, Cognac", flammable: "No", liquid: "Yes", color: "Orange, Green, Tan", accessory: "No", accessorytype: "None")
+s25 = Shot.create(name: "Blowjob", description: "This has long been a favorite of bachelorette parties and divorce parties. Despite the name, this shot is much more like a desert, but with some mind melting effects.", 
+	image: "Blowjob_1.jpg", mixratio: "Baileys Irish Cream, Kahlua, Amaretto, Whipped Cream", flammable: "No", liquid: "Yes", color: "Brown, Tan", accessory: "No", accessorytype: "None")
+s26 = Shot.create(name: "Flaming Bob Marley", description: "Similar to the regular Bob Marley shot except with flammable rum. Some folks have been known to use the flame to light their favorite smoking product...Yeah Mon!", 
+	image: "Flaming-Bob-Marley_1.jpg", mixratio: "Creme De Menthe, Banana Schnapps, Grenadine, Bacardi 151 Rum", flammable: "Yes", liquid: "Yes", color: "Red, Yellow, Green", accessory: "No", accessorytype: "None")
+s27 = Shot.create(name: "Mardi Gras", description: "Fat Tuesday has never tasted any better. Consume a few of these and it will be the best Mardi Gras you will ever forget.", 
+	image: "MardiGras_1.jpg", mixratio: "Vodka, Lemon Jello, Lime Jello, Grape Jello, Whipped Cream", flammable: "No", liquid: "Yes", color: "Yellow, Green, Purple", accessory: "Yes", accessorytype: "Serve with Mardi Gras beads")
+s28 = Shot.create(name: "Flaming Rainbow", description: "For those who like a little color in their life, the Flaming Rainbow delivers a spectrum of hues along with a sweetness and bite. A real attention getter at the bar!", 
+	image: "Flaming-Rainbow_1.jpg", mixratio: "Grenadine, Orange Juice, Vodka, Club Soda, Blue Food Coloring, Bacardi 151", flammable: "Yes", liquid: "Yes", color: "Red, Oranage, Yellow, Green, Blue", accessory: "Yes", accessorytype: "Serve with Mardi Gras beads")
 
 
 s1.ingredients << [i1, i2, i3, i4]
@@ -106,6 +136,16 @@ s15.ingredients << [i9, i36]
 s16.ingredients << [i34, i35]
 s17.ingredients << [i7, i8]
 s18.ingredients << [i32, i37, i38]
+s19.ingredients << [i1, i31, i35]
+s20.ingredients << [i7, i39, i40]
+s21.ingredients << [i7, i9, i10, i41]
+s22.ingredients << [i7, i9, i16]
+s23.ingredients << [i3, i42, i43, i44, i46]
+s24.ingredients << [i9, i39, i45]
+s25.ingredients << [i5, i9, i10, i44]
+s26.ingredients << [i7, i35, i39, i40]
+s27.ingredients << [i3, i14, i44]
+s28.ingredients << [i3, i4, i7, i35, i47, i48]
 
 
 User.create!(name: "Example User", email: "example@shotmaker.com", password: "foobarr", password_confirmation: "foobarr")
