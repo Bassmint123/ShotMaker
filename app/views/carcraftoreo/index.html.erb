@@ -1,0 +1,93 @@
+<%= render partial: "shared/header" %>
+
+<div class="main">
+  <div class="container">
+    <h2>Car Craft Oreo Shot</h2>
+
+
+<div class="main ingredient-show">
+  <div class="container">
+      
+    <!-- Display the shot's info here -->
+        <%= image_tag "Oreo-Cookie-Shot.jpg", class: "img-responsive"%>
+        <div class="shot-data">
+          <h3>Car Craft Oreo Shot</h3>
+          <table>
+            <tr>
+              <th>Topic</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Description</td>
+              <td>This particular shot was inspired by an infamous Oreo Cookie fight at the Car Craft Summer Nationals long ago. According to legend, the cookie fight was initiated by Ken Beem, but that was never confirmed as some of the first casualties were sound asleep. The motivation for this early morning Nabisco non-sense was fairly simple: Beem was on a mission to get everyone's ass out of bed in the hotel room and start cruising. The hotel room was initially calm, but as Beem's thirst for melting tire rubber became overwhelming, he literally began rocketing Oreo Cookies across the hotel room. Witnesses claim somebody (Doug Taylor??) yelled "Incoming!" as he wisely grabbed a bedsheet for protection. Within seconds, the walls became plastered with Oreo shrapnel and dotted with small mounds of cream filling and dark cookie crumbs. There were piles of crumbs everywhere. Even electrical sockets were clocked with crumbs! While the cookies flew, there were cries of, "Jump awn dat thhhhang!" as cookie shit sprayed everywhere. As an attempted cease fire, David Hauck yelled, "Hey man! Cut the shit! The hotel is going to fuckin' charge me for this!" By that time, it was too late. The Nabisco napalming had been done. Still to this day, there are some participants (or victims) who still have crumbs in their hair and ears. In this delicious shot, we salute the infamous Car Craft Summer Nationals Oreo cookie fight.</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td>Brown, White</td>
+            </tr>
+            <tr>
+              <td>Liquid</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Flammable</td>
+              <td>No.  ...but it should be</td>
+            </tr>
+            <tr>
+              <td>Mix Ratio</td>
+              <td>
+              <div style="display:block; min-height: 20px; min-width:100px; margin-left: 10px">
+                <ul>
+                  <li>1/2 ounce Kahlua Coffee Liqueur</li> 
+                  <li>1/2 ounce White Crème de Cacao</li> 
+                  <li>1/2 ounce Baileys Irish Cream</li>
+                </ul>
+               </div> 
+              </td>
+            </tr>
+            <tr>
+              <td>Accessory</td>
+              <td>The glass rim should be coated with Oreo crumbs</td>
+            </tr>
+            <tr>
+              <td>Accessory Type</td>
+              <td>Food</td>
+            </tr>
+            <tr>
+              <td>Ritual</td>
+              <td>Right before drinking this shot, one must loudly yell--"Jump on dat thhhhang!"</td>
+            </tr>
+          </table>
+        </div>
+
+    <h1>Ingredients</h1>
+    
+    <div class="shot col-md-3">   <!-- <div class="ingredient col-md-2">  -->
+      <%= image_tag @ingredient1.image %>
+      <h3><%= @ingredient1.ingredientname %></h3>
+      <p><%= @ingredient1.description %></p>
+      <%= link_to "Learn more", ingredient_path(@ingredient1) %>
+    </div>
+    
+    <div class="shot col-md-3">   <!-- <div class="ingredient col-md-2">  -->
+      <%= image_tag @ingredient2.image %>
+      <h3><%= @ingredient2.ingredientname %></h3>
+      <p><%= @ingredient2.description %></p>
+      <%= link_to "Learn more", ingredient_path(@ingredient2) %>
+    </div>
+    
+    <div class="shot col-md-3">   <!-- <div class="ingredient col-md-2">  -->
+      <%= image_tag @ingredient3.image %>
+      <h3><%= @ingredient3.ingredientname %></h3>
+      <p><%= @ingredient3.description %></p>
+      <%= link_to "Learn more", ingredient_path(@ingredient3) %>
+    </div>
+    
+   
+  </div>
+</div>
+ 
+  </div>
+</div>
+
+<%= render partial: "shared/footer" %>

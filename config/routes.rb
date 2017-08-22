@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get '/ingredients/:id' => 'ingredients#show', as: :ingredient
   get '/shotm' => 'shotm#index'
   get '/about' => 'about#index'
+  get '/carcraftoreo' => 'carcraftoreo#index'
   get '/contact' => 'contact#index'
   get 'welcome/index'
   root 'welcome#index'
