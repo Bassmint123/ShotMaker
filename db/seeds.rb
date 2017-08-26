@@ -148,11 +148,11 @@ s27.ingredients << [i3, i14, i44]
 s28.ingredients << [i3, i4, i7, i35, i47, i48]
 
 
-User.create!(name: "Example User", email: "example@shotmaker.com", password: "foobarr", password_confirmation: "foobarr", admin: true)
+User.create!(name: "Example User", email: "example@shotmaker.com", password: "foobarr", password_confirmation: "foobarr", admin: true, activated: true, activated_at: Time.zone.now)
 
 99.times do |n|
   name = Faker::Name.name
   email = "example-#{n+1}@shotmaker.com"
   password = "password"
-  User.create!(name: name, email: email, password: password, password_confirmation: password)
+  User.create!(name: name, email: email, password: password, password_confirmation: password, activated: true, activated_at: Time.zone.now)
 end
