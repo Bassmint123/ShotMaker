@@ -1,7 +1,10 @@
 brad:
-  name: Brad Example
-  email: brad@example.com
+  name: Brad Beiermann
+  email: bradbeiermann@yahoo.com
   password_digest: <%= User.digest('password') %>
+  admin: true
+  activated: true
+  activated_at: <%= Time.zone.now %>
 
 archer:
   name: Sterling Archer
