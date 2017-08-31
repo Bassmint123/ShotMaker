@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/signup' => 'users#new'
   resources :users
   resources :account_activations, only: [:edit]
+  resources :password_resets, only: [:new, :create, :edit, :update]
 
   get '/shots' => 'shots#index'
   get '/shots/:id' => 'shots#show', as: :shot
