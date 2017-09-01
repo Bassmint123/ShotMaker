@@ -149,6 +149,7 @@ s28.ingredients << [i3, i4, i7, i35, i47, i48]
 
 
 User.create!(name: "Brad Beiermann", email: "bradbeiermann@yahoo.com", password: "password", password_confirmation: "password", admin: true, activated: true, activated_at: Time.zone.now)
+User.create!(name: "Cimstrat", email: "bradb@cimstrat.com", password: "password", password_confirmation: "password", admin: true, activated: true, activated_at: Time.zone.now)
 
 99.times do |n|
   name = Faker::Name.name
