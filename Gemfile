@@ -44,6 +44,12 @@ gem 'bootstrap-will_paginate', '~> 0.0.10'
 # Use this for testing
 gem 'rails-controller-testing', '~> 1.0.1'
 
+# Gems for image handling
+gem 'carrierwave', '0.11.2'
+gem 'mini_magick', '4.5.1'
+gem 'fog', '1.38.0'
+gem 'fog-json', '1.0.2'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.3.13'

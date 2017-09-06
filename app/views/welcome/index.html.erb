@@ -1,6 +1,33 @@
+<% if logged_in? %>
+  <%= render partial: "shared/header" %>
+
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="well well-lg">
+          <h2>Welcome to ShotMaker</h2>
+        </div>
+        <aside class="col-md-4">
+          <section class="user_info">
+            <%= render 'shared/user_info' %>
+          </section>
+          <section class="micropost_form">
+            <%= render 'shared/micropost_form' %>
+          </section>
+        </aside>
+        <div class="col-md-8">
+          <h3>Micropost Feed</h3>
+          <%= render 'shared/feed' %>
+        </div>
+      </div>
+     <br><br><br><br><br><br>
+    </div>
+  </div>
+  <%= render partial: "shared/footer" %>
+
+<% else %>
 
 <div class="welcome_container">
-
 <div class="ad_space">
 <!-- Side Navigation -->
   <div id="mySidenav" class="sidenav">
@@ -68,3 +95,5 @@
     </div>
   </div>
 </div>
+
+<% end %>
