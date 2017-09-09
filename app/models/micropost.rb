@@ -3,7 +3,7 @@ class Micropost < ApplicationRecord
   default_scope -> { order(created_at: :desc) }  # This makes sure the posts display in deceding order
   mount_uploader :picture, PictureUploader
   validates :user_id, presence: true
-  validates :content, presence: true, length: { maximum: 140 }
+  validates :content, presence: true, length: { maximum: 500 }
   validate :picture_size
 
   private
