@@ -150,7 +150,7 @@ s28.ingredients << [i3, i4, i7, i35, i47, i48]
 # Sample system users
 User.create!(name: "Brad Beiermann", email: "bradbeiermann@yahoo.com", password: "password", password_confirmation: "password", admin: true, activated: true, activated_at: Time.zone.now)
 User.create!(name: "Cimstrat", email: "bradb@cimstrat.com", password: "password", password_confirmation: "password", admin: true, activated: true, activated_at: Time.zone.now)
-User.create!(name: "Vistor", email: "vistor@shotmaker.com", password: "password", password_confirmation: "password", admin: false, activated: true, activated_at: Time.zone.now)
+User.create!(name: "Visitor", email: "visitor@shotmaker.com", password: "password", password_confirmation: "password", admin: false, activated: true, activated_at: Time.zone.now)
 
 # Generate 99 users
 99.times do |n|
