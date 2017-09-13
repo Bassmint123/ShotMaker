@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'welcome#index'
   get 'welcome/index'
   get 'password_resets/new'
@@ -16,11 +16,15 @@ Rails.application.routes.draw do
   get '/about' => 'about#index'
   get '/contact' => 'contact#index'
   get '/carcraftoreo' => 'carcraftoreo#index'
-  resources :users
+  resources :users do 
+    member do 
+      get :following, :followers
+    end
+  end
+
   resources :account_activations, only: [:edit]
   resources :password_resets,     only: [:new, :create, :edit, :update]
   resources :password_resets,     only: [:new, :create, :edit, :update]
   resources :microposts,          only: [:create, :destroy]
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :relationships,       only: [:create, :destroy]
 end

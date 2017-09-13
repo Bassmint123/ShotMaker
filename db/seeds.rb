@@ -147,9 +147,10 @@ s26.ingredients << [i7, i35, i39, i40]
 s27.ingredients << [i3, i14, i44]
 s28.ingredients << [i3, i4, i7, i35, i47, i48]
 
-
+# Sample system users
 User.create!(name: "Brad Beiermann", email: "bradbeiermann@yahoo.com", password: "password", password_confirmation: "password", admin: true, activated: true, activated_at: Time.zone.now)
 User.create!(name: "Cimstrat", email: "bradb@cimstrat.com", password: "password", password_confirmation: "password", admin: true, activated: true, activated_at: Time.zone.now)
+User.create!(name: "Vistor", email: "vistor@shotmaker.com", password: "password", password_confirmation: "password", admin: false, activated: true, activated_at: Time.zone.now)
 
 # Generate 99 users
 99.times do |n|
@@ -159,10 +160,18 @@ User.create!(name: "Cimstrat", email: "bradb@cimstrat.com", password: "password"
   User.create!(name: name, email: email, password: password, password_confirmation: password, activated: true, activated_at: Time.zone.now)
 end
 
-
+# Generate microposts
 users = User.order(:created_at).take(6)
 50.times do
   content = Faker::Lorem.sentence(5)
   users.each { |user| user.microposts.create!(content: content) }
 end
+
+# Following relationships
+users = User.all
+user = users.first
+following = users[2..50]
+followers = users[3..40]
+following.each { |followed| user.follow(followed) }
+followers.each { |follower| follower.follow(user) }
 
